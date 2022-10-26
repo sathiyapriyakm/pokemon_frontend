@@ -1,12 +1,20 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
+import socketIOClient from "socket.io-client";
+import { API } from "./global";
+
+export const socket=socketIOClient(`${API}`,{autoconnect:false});
 
 
 export default function Home(){
 
   const [battleId,setBattleId]=useState("");
   const navigate = useNavigate();
+  useEffect(()=>{
+    socket.connect();
+
+  },[]);
   
     return (
         <div className="home">

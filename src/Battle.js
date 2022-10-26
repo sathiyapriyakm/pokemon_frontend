@@ -4,8 +4,9 @@ import { API } from "./global";
 import socketIOClient from "socket.io-client";
 import randomstring from "randomstring";
 import { Button } from "@mui/material";
+import {socket} from "./Home"
 
-const socket=socketIOClient(`${API}`,{autoconnect:false});
+// const socket=socketIOClient(`${API}`,{autoconnect:false});
 
 export default function Battle(){
     const {battleId}=useParams()|| null;
@@ -28,20 +29,23 @@ export default function Battle(){
     .then((poke)=>setPokemon(poke))
     }  
   useEffect(()=>{
-      getPokemon();
-      socket.connect();
+    //   socket.connect();
       socket.on("connect",async()=>{
           socket.emit("join",battleId ? battleId: randomstring.generate())
       })
-      socket.on("refresh",(battle)=>{
-          setBattle(battle);
+      socket.on("refresh",(pokeBattle)=>{
+          setBattle(pokeBattle);
       })
+      getPokemon();
 
     },[]);
-  
+  console.log(battle);
  
     return (
+        
         <div className="battle">
+           
+         {/* { battle._id ? <> */}
         <h1>PokeBattle!</h1>
         <h2>Battle Id:{battle._id}</h2>
         {(!battle.playerOne.pokemon._id || !battle.playerTwo.pokemon._id) &&
@@ -50,8 +54,8 @@ export default function Battle(){
          <BattleStage battle={battle}/> }
          {(battle.playerOne.pokemon.hp <=0 || battle.playerTwo.pokemon.hp <=0) &&
          <VictoryStage battle={battle}/> }
-         
-    </div>  
+         {/* </>: <h2>Loading....</h2>} */}
+    </div> 
     )
 
 }
