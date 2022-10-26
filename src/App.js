@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import Battle from './Battle';
+import NotFound from './NotFound';
+import {Route,Routes,Navigate} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/battle" element={<Battle />} /> 
+        <Route path="/battle/:battleId" element={<Battle />} />    
+        <Route path="/404-Page" element={<NotFound />} />
+        <Route path="*" element={<Navigate replace to="/404-Page" />} />
+      </Routes>
+
     </div>
   );
 }
-
 export default App;

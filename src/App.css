@@ -1,38 +1,70 @@
+:root{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(212, 236, 245);
+}
+.body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  height:100vh;
+  
 }
+.displayOption{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  column-count: 2;
+  column-gap: 16px;
+
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.options{
+  margin-top: 50px; 
+  flex: 1;
 }
+.inputBox{
+  width:150px;
+  height:30px;
+  margin: 10px;
+  background-color: white;
+}
+.pokewrap{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
+}
+.pokeimg{
+  /* flex:1; */
+  height:150px;
+  width:auto;
+}
+.pokewrap_battle{
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.battle_move{
+  height: 40px;
+  width:300px;
+background: tomato;
+cursor: pointer;
+}
+.displayOption_battle{
+display: flex;
+flex-wrap: wrap;
+}
+.victoryScreen{
+  position: fixed;
+  height: 100vh;
+  width:100vw;
+  left: 0;
+  top:0;
+  background:lightgoldenrodyellow;
+  
 }
