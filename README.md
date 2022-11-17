@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# [PokeMon Game app](https://curious-pastelito-579c2f.netlify.app/) - MERN Stack Website
+  [Front End](https://github.com/sathiyapriyakm/beauty-saloon-frontend)
+  [Back End](https://github.com/sathiyapriyakm/pokemon_frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Brief Description
 
-### `npm start`
+PokeMon gaming app is a web applican used to play pokemon battle game for having fun time between two players from their places of convenience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Short tech summary`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  -React is Used for Front end and nodeJS as Back end along with MongoDB as database  
+  - Socket.IO and mongo DB change stream are used for  real time update and notification in the Game
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+### `User features`
+  - User can create new game or can join the existing battle using battle ID.
+  - User can choose the PokeMon of their choice.
+  - User can attack the other player with their moves 
+  - User can witness their winning after any of the player wins and can start a new game
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
+## Tech Used
+  - ReactJS
+  - ExpressJS
+  - NodeJS
+  - MongoDB and MongoDB ChangeStream
+  - Socket.io - for real time update
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots📷
+- Homepage
+![Homepage](/ScreenShots/Homepage.JPG "Homepage")
+- selection Page
+![selection Page](/ScreenShots/SelectionPage.JPG "selection Page")
+- Fight stage
+![Fight stage](/ScreenShots/FightStage.JPG "Fight stage")
+- Victory stage
+![Victory stage](/ScreenShots/VictoryStage.JPG "Victory stage")
