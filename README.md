@@ -6,11 +6,11 @@
 
 ## Brief Description
 
-PokeMon gaming app is a web applican used to play pokemon battle game for having fun time between two players from their places of convenience
+PokeMon gaming app is a web application used to play pokemon battle game for having fun time by two players from their places of convenience
 
 ### `Short tech summary`
 
-  -React is Used for Front end and nodeJS as Back end along with MongoDB as database  
+  - React is Used for Front end and nodeJS as Back end along with MongoDB as database  
   - Socket.IO and mongo DB change stream are used for  real time update and notification in the Game
 
 
